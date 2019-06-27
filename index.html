@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>To do App</title>
+        <link href="https://fonts.googleapis.com/css?family=Heebo:100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa:300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Para Hacer</h1>
+        <div class="contenedor">
+            <div class="input">
+                <div class="button">
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+                <input class="entrada-tareas" type="text" placeholder="¿Que necesitas hacer?">
+            </div>
+
+            <div class="cuerpo">
+
+            </div>
+
+            <div class="pie">
+                <div class="task-counter">
+                    1 tarea restante
+                </div>
+                <div class="options">
+                    <div class="option-active" onclick="showTodas(this)">Todas</div>
+                    <div onclick="showActivas(this)">Activas</div>
+                    <div onclick="showDone(this)">Completas</div>
+                </div>
+                <div class="clear-task" onclick="clearList()">
+                    Limpiar Tareas
+                </div>
+            </div>
+        </div>
+    <script src="app.js"></script>
+    </body>
+</html>
